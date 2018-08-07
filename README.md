@@ -2,17 +2,15 @@
 Wallet and daemon for AnuCoin [ANU] cryptocurrency on docker
 
 # Quickstart
-Type `docker run -it joshendriks/anucoin` and see the wallet starting.
+Type `docker run -it -e "USER=me" -e "PASSWORD=secret" -e "RPCALLOW=127.0.0.1" chainmapper/anucoin` and see the wallet starting.
+
+Alternatively type `docker run -it -v "<path_to_config>:/config/AnuCoin.conf" chainmapper/anucoin` to use your own config.
 
 ```
-Docker AnuCoin wallet
+Docker ANU wallet
 
-By: Jos Hendriks
-GitHub: https://github.com/joshendriks/
-Docker: https://hub.docker.com/r/joshendriks/
-
-BTC: 1NCZgpMMoNwL6ZeFsEQ2kRZEzzzTd5TuGk
-ANU: ALQp1z7bFiHNTCETcshGvhjYxnpERCrwGG
+By: ChainMapper
+Website: https://chainmapper.com
 
 Starting ANU daemon...
 ```
